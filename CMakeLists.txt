@@ -3,4 +3,4 @@ project(Employee)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Employee main.cpp Employee.cpp Employee.h)
+add_executable(Employee main.cpp Employee.cpp Employee.h McDonaldWorker.cpp McDonaldWorker.h)

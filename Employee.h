@@ -10,10 +10,12 @@ using namespace std;
 
 class Employee {
 public:
-    Employee(string name,string lastname,int monthly);
-    Employee();
+    Employee(string name,string lastname,int monthly); //constructor
+   Employee(); // default constructor
     Employee(const Employee& pass); //copy constructor
-  ~Employee(); // destructor
+    Employee & operator=(const Employee &other);
+ ~Employee(); // destructor
+
     void setEmplolyeeName(string name);
     string getEmployeeName();
 
@@ -23,8 +25,9 @@ public:
     void setEmployeeMonthly(int monthly);
     int getEmployeeMonthly();
 
-    void print();
-private:
+  virtual void print();
+
+protected:
     string *employeeName;
     string *employeelastName;
     int *employeemonthly;
